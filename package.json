@@ -1,0 +1,32 @@
+{
+  "name": "opencode-multi-account",
+  "version": "0.1.0",
+  "description": "Multiple API accounts per provider for OpenCode — virtual providers, per-account keys, account cycling and auto-switch on failure.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "multi-account",
+    "providers",
+    "rate-limit"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./tui": "./src/tui.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@opencode/plugin": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/node": "latest"
+  }
+}
